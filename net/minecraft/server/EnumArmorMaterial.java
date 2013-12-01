@@ -27,7 +27,7 @@ public enum EnumArmorMaterial {
         return this.h;
     }
 
-    public int b() {
-        return this == CLOTH ? Item.LEATHER.id : (this == CHAIN ? Item.IRON_INGOT.id : (this == GOLD ? Item.GOLD_INGOT.id : (this == IRON ? Item.IRON_INGOT.id : (this == DIAMOND ? Item.DIAMOND.id : 0))));
+    public Item b() {
+        return this == CLOTH ? Items.LEATHER : (this == CHAIN ? Items.IRON_INGOT : (this == GOLD ? Items.GOLD_INGOT : (this == IRON ? Items.IRON_INGOT : (this == DIAMOND ? Items.DIAMOND : null))));
     }
 }

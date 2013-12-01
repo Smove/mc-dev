@@ -65,7 +65,7 @@ public class TileEntityMobSpawnerData extends WeightedRandomChoice {
     public NBTTagCompound a() {
         NBTTagCompound nbttagcompound = new NBTTagCompound();
 
-        nbttagcompound.setCompound("Properties", this.b);
+        nbttagcompound.set("Properties", this.b);
         nbttagcompound.setString("Type", this.c);
         nbttagcompound.setInt("Weight", this.a);
         return nbttagcompound;

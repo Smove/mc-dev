@@ -14,7 +14,7 @@ class CrashReportCorruptNBTTag2 implements Callable {
     }
 
     public String a() {
-        return NBTBase.b[this.a];
+        return NBTBase.a[this.a];
     }
 
     public Object call() {

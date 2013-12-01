@@ -2,9 +2,9 @@ package net.minecraft.server;
 
 public enum EnumMovingObjectType {
 
-    TILE("TILE", 0), ENTITY("ENTITY", 1);
+    MISS("MISS", 0), BLOCK("BLOCK", 1), ENTITY("ENTITY", 2);
 
-    private static final EnumMovingObjectType[] c = new EnumMovingObjectType[] { TILE, ENTITY};
+    private static final EnumMovingObjectType[] d = new EnumMovingObjectType[] { MISS, BLOCK, ENTITY};
 
     private EnumMovingObjectType(String s, int i) {}
 }

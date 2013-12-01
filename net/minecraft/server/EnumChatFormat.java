@@ -28,11 +28,11 @@ public enum EnumChatFormat {
         this.B = "\u00A7" + c0;
     }
 
-    public char a() {
+    public char getChar() {
         return this.z;
     }
 
-    public boolean b() {
+    public boolean isFormat() {
         return this.A;
     }
 
@@ -60,7 +60,7 @@ public enum EnumChatFormat {
         for (int j = 0; j < i; ++j) {
             EnumChatFormat enumchatformat = aenumchatformat[j];
 
-            if ((!enumchatformat.c() || flag) && (!enumchatformat.b() || flag1)) {
+            if ((!enumchatformat.c() || flag) && (!enumchatformat.isFormat() || flag1)) {
                 arraylist.add(enumchatformat.d());
             }
         }
@@ -75,7 +75,7 @@ public enum EnumChatFormat {
         for (int j = 0; j < i; ++j) {
             EnumChatFormat enumchatformat = aenumchatformat[j];
 
-            w.put(Character.valueOf(enumchatformat.a()), enumchatformat);
+            w.put(Character.valueOf(enumchatformat.getChar()), enumchatformat);
             x.put(enumchatformat.d(), enumchatformat);
         }
     }

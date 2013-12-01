@@ -8,10 +8,10 @@ public class AttributeSnapshot {
     private final double c;
     private final Collection d;
 
-    final Packet44UpdateAttributes a;
+    final PacketPlayOutUpdateAttributes a;
 
-    public AttributeSnapshot(Packet44UpdateAttributes packet44updateattributes, String s, double d0, Collection collection) {
-        this.a = packet44updateattributes;
+    public AttributeSnapshot(PacketPlayOutUpdateAttributes packetplayoutupdateattributes, String s, double d0, Collection collection) {
+        this.a = packetplayoutupdateattributes;
         this.b = s;
         this.c = d0;
         this.d = collection;
